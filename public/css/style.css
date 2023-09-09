@@ -166,11 +166,15 @@ label {
 
 
 /* FAQ */
-#faq .container{
+ .container .hello #faq{
   margin:0 40px;
-  background-color: red;
+  
+
   max-width: 600px;
   display: flex;
+  flex-direction: column;
+gap: 20px;
+ 
 }
 #faq .main-heading{
   font-size: 5.5rem;
@@ -187,6 +191,117 @@ label {
   text-align: center;
   margin-top: 50px;
 }
+.container .tab{
+  position: relative;
+  background-color: #fff;
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.container  .tab input{
+  appearance: none;
+  
+  
+}
+
+.container  .tab input:checked ~ label::after{
+  transform: rotate(135deg);
+
+}
+/* .container  .tab input:checked ~ label h2{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
+} */
+.container  .tab input:checked ~ .content{
+  max-height: 100vh;
+}
+
+.container  .tab label h2{
+  width: 40px;
+  height: 40px;
+  background-color:#d0efff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777676;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+.container  .tab label h3{
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  z-index: 10;
+}
+
+.container  .tab .content{
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.container  .tab .content p{
+  position: relative;
+  padding: 10px 0;
+  color: #000;
+  z-index: 10;
+}
+
+.container .tab:nth-child(1)  label h2{
+  background-color: linear-gradient(135deg,#22dd73);
+}
+
+.container .tab:nth-child(2) label h2{
+  background: linear-gradient(135deg,#5422dd);
+}
+
+.container .tab:nth-child(4) label h2{
+  background: linear-gradient(135deg,#22dd73);
+}
+
+.container .tab:nth-child(5) label h2{
+  background: linear-gradient(135deg,#22dd73);
+}
+
+.container .tab:nth-child(6) label h2{
+  background: linear-gradient(135deg,#22dd73);
+}
+.container .tab:nth-child(7) label h2{
+  background: linear-gradient(135deg,#22dd73);
+}
+
+
+
+.container  .tab label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container  .tab label::after{
+  content:"+";
+  position: absolute;
+  right: 20px;
+  
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.3);
+  transition: transform 1s;
+}
+
+.container  .tab:hover label::after{
+color: #333;
+}
+
 
 /* our services style starts  */
 
