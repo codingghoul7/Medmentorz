@@ -78,7 +78,7 @@ res.status(201).render("index")
 
         })
 
-     connectDB()
+    //  connectDB()
     
     //server create
     app.listen(port, ()=>{
