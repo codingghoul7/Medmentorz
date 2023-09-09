@@ -42,13 +42,13 @@ name:{
             telegramid:{
                 type:String,
                 unique: true,
-                validate: {
-                    validator: function(value) {
-                      // Check if the string matches the format of a Telegram ID
-                      return /^[0-9]+(_[0-9]+)*$/.test(value);
-                    },
-                    message: 'Telegram ID must be in the correct format.'
-                  }
+                // validate: {
+                //     validator: function(value) {
+                //       // Check if the string matches the format of a Telegram ID
+                //       return /^[0-9]+(_[0-9]+)*$/.test(value);
+                //     },
+                //     message: 'Telegram ID must be in the correct format.'
+                //   }
                 },
 
 })
