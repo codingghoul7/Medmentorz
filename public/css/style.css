@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 * {
   font-family: "Poiret One", cursive;
   font-weight: bold;
@@ -37,6 +38,9 @@ h3 {
 .row {
   margin: 0;
 }
+.navbar-expand-lg .navbar-nav .nav-link{
+  margin-left: 1px;
+}
 
 .navbar-style {
   background-color: #f8f9fa;
@@ -44,10 +48,12 @@ h3 {
 }
 .navbar-style button{
   font-size: 1.5rem;
+  padding: 10px 60px;
 }
 
 #logo {
   display: initial;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 3.5rem;
   letter-spacing: 1px;
@@ -55,6 +61,10 @@ h3 {
   color: #747f7e;
   text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
   padding: 0;
+
+}
+.logo-img{
+  border-radius: 50%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -68,6 +78,7 @@ h3 {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #fd5c63;
 }
+
 
 /* our hero sections  */
 .hero-text{
@@ -146,9 +157,11 @@ label {
 
 .about-style .main-heading,
 .service-style .main-heading,
-.contact-style .main-heading {
+.contact-style .main-heading ,
+.founder-style .main-heading
+{
   font-size: 5rem;
-  color: #fd5c63;
+  color: #000000c4;
   letter-spacing: 1px;
   font-weight: bold;
   
@@ -181,12 +194,13 @@ gap: 20px;
   line-height: 1.5;
   text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.26);
   letter-spacing: 1px;
-  color: #2f2f2f;
+  /* color: #2f2f2f; */
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 5rem;
-  color: #fd5c63;
+  color: #000000c4;
   letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-align: center;
   margin-top: 50px;
@@ -242,12 +256,14 @@ height: 100%;
   font-weight: 500;
   color: #333;
   z-index: 10;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .container  .tab .content{
   max-height: 0;
   transition: 1s;
   overflow: hidden;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .container  .tab .content p{
@@ -255,6 +271,7 @@ height: 100%;
   padding: 10px 0;
   color: #000;
   z-index: 10;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .container .tab:nth-child(1)  label h2{
@@ -303,10 +320,57 @@ color: #333;
 }
 
 
+
+/* founder */
+
+.founder-style .main-heading{
+  font-size: 5.5rem;
+  line-height: 1.5;
+  text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.26);
+  letter-spacing: 1px;
+  /* color: #2f2f2f; */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #000000c4;
+  letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+.founder-style .founder-img{
+  
+  display: flex;
+margin-left: auto;
+margin-right: auto;
+/* width: 50%; */
+}
+.founder-style li{
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  
+  list-style: none;
+}
+.founder-style .icon-style{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 40px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+/* founder-end */
+
 /* our services style starts  */
 
 .service-style {
   margin-bottom: 10rem;
+}
+.center{
+  text-align: center;
 }
 
 .box {
@@ -519,7 +583,14 @@ label {
 footer {
   /* background: rgb(221, 217, 217); */
 }
-
+.footer-style .icon-style{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 40px;
+  align-items: center;
+  cursor: pointer;
+}
 footer p {
   padding: 1rem 0;
   margin: 0;
@@ -532,8 +603,8 @@ footer p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-right: 5rem;
-    margin-left: 12rem;
+    
+    margin-left: 10rem;
   }
  
 
@@ -543,6 +614,11 @@ footer p {
   #logo {
     font-size: 2.5rem;
   }
+  .navbar-style button{
+    font-size: 1.5rem;
+    padding: 0px 10px;
+  }
+
   .btn-style{
     font-size: 10px;
   }

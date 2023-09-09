@@ -2,6 +2,12 @@ require("dotenv").config();
 const express =require("express");
 const path= require("path");
 
+const helmet = require('helmet');
+
+
+
+
+
 
 // require("../src/db/conn");
 const User= require("./models/usermessage")
@@ -27,6 +33,7 @@ const partialpath = path.join(__dirname,"../templates/partials")
 // console.log(( path.join(__dirname,"../public"))) 
 
 //middleware
+app.use(helmet());
 app.use(express.urlencoded({extended:false}))
 app.use("/css", express.static(path.join(__dirname,"../node_modules/bootstrap/dist/css")));
 app.use("/js", express.static(path.join(__dirname,"../node_modules/bootstrap/dist/js")));
@@ -78,7 +85,7 @@ res.status(201).render("index")
 
         })
 
-    //  connectDB()
+     connectDB()
     
     //server create
     app.listen(port, ()=>{
