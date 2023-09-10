@@ -371,6 +371,7 @@ margin-right: auto;
 }
 .center{
   text-align: center;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .box {
@@ -383,7 +384,11 @@ margin-right: auto;
 .our-services {
   margin-top: 75px;
   padding-bottom: 30px;
-  padding: 0 30px;
+  padding: 30px 30px;
+
+  height: 350px; 
+
+
   min-height: 198px;
   text-align: center;
   border-radius: 10px;
@@ -391,21 +396,53 @@ margin-right: auto;
   transition: all 0.4s ease-in-out;
   box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
 }
-
+.our-services p{
+  font-size: 4.2rem;
+  display: flex;
+  justify-content: center;
+  margin: 30px 30px;
+  color: #000;
+}
+.our-services span{
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 30px;
+  
+}
 .our-services .icon {
   margin-bottom: -21px;
   transform: translateY(-50%);
   text-align: center;
 }
+.our-services .price{
+color: rgba(197, 14, 14, 0.829);
+}
+
+
 
 .our-services h4 {
   font-size: 3rem;
   font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+.our-services  .price  {
+  text-decoration: line-through;
+
 }
 
 .our-services:hover h4,
 .our-services:hover p {
   color: #fff;
+ 
+
+}
+.our-services:hover .price {
+  color: rgba(197, 14, 14, 0.829);
+ 
+
 }
 
 .speedup:hover {
