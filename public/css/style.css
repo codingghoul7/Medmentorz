@@ -680,6 +680,9 @@ footer p {
   .hero-text p,
   .our-services p,
   label {
+    font-size: 1.3rem;
+  }
+  .our-services p{
     font-size: 4.5rem;
   }
 
