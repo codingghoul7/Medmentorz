@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('images/growth.png');
 * {
   font-family: "Poiret One", cursive;
   font-weight: bold;
 }
 
+.body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
 
 
 html {
@@ -43,14 +52,17 @@ h3 {
 }
 
 .navbar-style {
-  background-color: #f8f9fa;
+  background-color:#f8f9fa;
   box-shadow: 2px 4px 13px 1px rgba(8, 8, 8, 0.04);
 }
 .navbar-style button{
-  font-size: 1.5rem;
-  padding: 10px 60px;
+  font-size: 2rem;
+  padding: 10px 50px;
+  font-family: bold;
 }
-
+.btn .btn-info .me-1{
+font-size: 23px;
+}
 #logo {
   display: initial;
   font-family: 'Raleway', sans-serif;
@@ -65,14 +77,21 @@ h3 {
 }
 .logo-img{
   border-radius: 50%;
+  
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #525252;
+ 
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   padding-left: 1rem;
   font-size: 1.9rem;
+}
+.nav-link{
+  font-size: 2rem;
+  font-family: bold;
+ 
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -84,6 +103,15 @@ h3 {
 .hero-text{
   margin-top: 3.2rem;
 }
+.image{
+ 
+  background-image: url(../images/1591.jpg);
+  /* background-repeat: no-repeat; */
+ position: relative;
+ margin-bottom: 20px;
+
+}
+
 
 .hero-text h1 {
   font-size: 5.5rem;
@@ -94,8 +122,8 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
  
-  /*  */
-/* text-align: center; */
+  
+text-align: center;
 }
 
 .hero-text h1:nth-child(2) {
@@ -137,6 +165,7 @@ label {
   border: 2px solid #fff;
   /* background: #ec615b; */
   background: #d0efff;
+  background-color: #d1f0ff;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
   -o-transition: 0.5s all;
@@ -398,18 +427,42 @@ margin-right: auto;
   box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
 }
 .our-services p{
-  font-size: 4.2rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
-  margin: 30px 30px;
+  margin: 10px 10px;
   color: #000;
 }
+
+.our-services h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.our-services  li{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  /* margin: 30px 30px; */
+  margin: 0;
+  color: #000;
+  padding-left: 0rem;
+}
+
+.our-services ul{
+ 
+  padding-left: 0rem;
+}
+
+
 .our-services span{
   font-size: 3.2rem;
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 30px 30px;
+  margin: 30px 10px;
   
 }
 .our-services .icon {
@@ -423,12 +476,7 @@ color: rgba(197, 14, 14, 0.829);
 
 
 
-.our-services h4 {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-}
+
 .our-services  .price  {
   text-decoration: line-through;
 
@@ -440,6 +488,24 @@ color: rgba(197, 14, 14, 0.829);
  
 
 }
+
+.our-services:hover  li{
+  
+  color: aliceblue;
+  padding-left: 0rem;
+}
+
+.our-services .price {
+  color: rgba(197, 14, 14, 0.829);
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
+.our-services .p2{
+  
+  font-size: 4rem;
+}
+
 .our-services:hover .price {
   color: rgba(197, 14, 14, 0.829);
  
@@ -510,13 +576,7 @@ label {
 }
 
 /* card-section */
-.body{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-}
 
 /* 
 .body{
@@ -620,6 +680,8 @@ label {
 
 footer {
   /* background: rgb(221, 217, 217); */
+  
+  position: sticky;
 }
 .footer-style .icon-style{
   display: flex;
@@ -644,6 +706,11 @@ footer p {
     
     margin-left: 10rem;
   }
+
+  .media{
+    text:hidden;
+  }
+  
  
 
 }
@@ -655,6 +722,12 @@ footer p {
   .navbar-style button{
     font-size: 1.5rem;
     padding: 0px 10px;
+  }
+  
+  .image{
+ 
+    background-image:none;
+  
   }
 
   .btn-style{
@@ -683,8 +756,19 @@ footer p {
     font-size: 1.3rem;
   }
   .our-services p{
-    font-size: 4.5rem;
+    font-size: 1.5rem;
   }
+  .our-services  li{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    /* margin: 30px 30px; */
+    margin: 0;
+    color: #000;
+    padding-left: 0rem;
+  }
+  
+
 
   .about-style .sub-heading,
   .service-style .sub-heading,
