@@ -2,13 +2,13 @@ const mongoose = require ("mongoose");
 require("dotenv").config();
 //creating a database
 
-// mongoose.connect("mongodb://localhost:27017/Medmentorz",{
-//     useNewUrlParser: true,
-//     useFindAndModify: false,
-//     useUnifiedTopology: true
-// }).then(()=>{
-//     console.log("connection successful")
-// }) .catch((error) => {console.log(error)});
+mongoose.connect("mongodb://localhost:27017/Medmentorz",{
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true
+}).then(()=>{
+    console.log("connection successful")
+}) .catch((error) => {console.log(error)});
 
  
 // async function main() {
