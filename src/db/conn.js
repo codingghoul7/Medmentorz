@@ -11,10 +11,10 @@ mongoose.connect("mongodb://localhost:27017/Medmentorz",{
 }) .catch((error) => {console.log(error)});
 
  
-// async function main() {
-//   mongoose.set("strictQuery", false);
-//   await mongoose.connect("mongodb://127.0.0.1/wikiDB",{useNewUrlParser:true});
-//   console.log("Connected");}
+async function main() {
+  mongoose.set("strictQuery", false);
+  await mongoose.connect("mongodb://127.0.0.1/wikiDB",{useNewUrlParser:true});
+  console.log("Connected");}
 
 const pass = process.env.PASSWORD
 
